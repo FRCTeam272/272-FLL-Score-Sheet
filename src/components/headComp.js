@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useScoreContext } from "../dataProvider"
+import Mission from "./mission"
 import * as React from "react"
 
 function compareObjs(obj1, obj2) {
@@ -9,7 +10,7 @@ function compareObjs(obj1, obj2) {
 export default function Head(){
     const [data, setData] = useState({})
     const [sumScores, setSumScores] = useState(0)
-    const [scores] = useScoreContext();
+    const {scores} = useScoreContext();
     useEffect(() => {
         if(localStorage.getItem("lastStore")){
             setData(localStorage.getItem("lastStore"))
@@ -38,7 +39,11 @@ export default function Head(){
         }
     }>
         {/* scoring Content */}
-        <div style={{flex: 1}}></div>
+        <div style={{flex: 1}}>
+            {data.map((i, index)=> {
+                <Mission index={index} mainText={i.mainText}></Mission>
+            })}
+        </div>
         {/* sum */}
         <div style={
             {   
