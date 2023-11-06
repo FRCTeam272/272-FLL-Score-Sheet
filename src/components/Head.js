@@ -112,7 +112,7 @@ export default function Head() {
             <div key={missionIndex}>
               <h2>{mission.name}</h2>
               <p>{mission.helpText}</p>
-              {mission.photo && <img src={mission.photo} alt={mission.name} />}
+              {mission.photo && <img src={mission.photo} alt={mission.name} width="300" height="300"/>}
               <List>
                 {mission.options.map((option, optionIndex) => (
                   <ListItem key={optionIndex}>
