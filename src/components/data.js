@@ -8,7 +8,7 @@ import eight from './imgs/08.png';
 import nine from './imgs/09.png';
 import ten from './imgs/10.png';
 import eleven from './imgs/11.png';
-import tweleve from './imgs/12.png';
+import twelve from './imgs/12.png';
 import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
@@ -16,7 +16,7 @@ import fifteen from './imgs/15.png';
 const x = [
   {
     "name": "M01: 3D Cinema",
-    "helpText": "small red beam is copletely to the right of the black frame",
+    "helpText": "small red beam is completely to the right of the black frame",
     "options": [20],
     "optionText": ["Engaged"],
     "photo": one,
@@ -107,7 +107,7 @@ const x = [
     "helpText": "If the chicken is intact and has moved from its starting position",
     "options": [10, 20], 
     "optionText": ["Engaged", "BONUS: And is over or completely past the lavender dot"],
-    "photo": tweleve,
+    "photo": twelve,
     "sum": 0 
   },
   { 
