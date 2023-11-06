@@ -136,7 +136,7 @@ const x = [
     "sum": 0 
   },
   { 
-    "name": "Penilties Remaining", 
+    "name": "Penalties Remaining", 
     "helpText": "!!! Only Select One !!!",
     "options": [-10, -15, -25, -50], 
     "optionText": [1, 2, 3, "4+"],
