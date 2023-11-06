@@ -135,6 +135,7 @@ export default function Head() {
         <p style={{marginRight: "5px"}}>{calculateSum()}</p>
         <button style={{marginRight: "5px"}} onClick={() => setMissions(data)}>Clear Inputs</button>
       </StickyDiv>
+      <br/><br/><br/>
     </Container>
   );
 }
