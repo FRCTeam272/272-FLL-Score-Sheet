@@ -128,7 +128,7 @@ export default function Head() {
                 ))}
               </List>
             </div>
-          ))}
+          ))} 
       </ContentDiv>
       <StickyDiv>
         <h2 style={{marginRight: "5px"}}>Total Sum:</h2>
