@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Mission 1",
+    "options": [10, 20, 30],
+    "optionText": ["1st Option", "2nd Option", "3rd Option"],
+    "sum": 0
+  },
+  { 
+    "name": "Mission 2", 
+    "options": [5, 15, 25], 
+    "optionText": ["1st Option", "2nd Option", "3rd Option"],
+    "sum": 0 
+  }
+]

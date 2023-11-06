@@ -1,8 +1,7 @@
 import * as React from "react"
-import { ScoreProvider } from "../dataProvider";
-import Head from "../components/headComp";
+
+import Head from "../components/Head";
 export default function Home() {
-  return <ScoreProvider>
-    <Head />
-  </ScoreProvider>
+  return <Head />
+  
 }
