@@ -13,7 +13,14 @@ import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
 
-const x = [
+const data = [
+  {
+    "name": "Equipment Inspection",
+    "helpText": "If your robot and all your equipment fit completely in one launch area and are under a height limit of 12 in. (305 mm) during the pre-match inspection: ",
+    "options": [20],
+    "optionText": ["Engaged"],
+    "sum": 0
+  },
   {
     "name": "M01: 3D Cinema",
     "helpText": "small red beam is completely to the right of the black frame",
@@ -79,7 +86,7 @@ const x = [
     "sum": 0 
   },
   { 
-    "name": "M09: Rolling Camera", 
+    "name": "M09: Movie Set", 
     "helpText": "",
     "options": [10, 10], 
     "optionText": ["If the boat is touching the mat and is completely past the black scene line", "If the camera is touching the mat and is at least partly in the camera target area"],
@@ -88,7 +95,7 @@ const x = [
   },
   { 
     "name": "M10: Sound Mixer", 
-    "helpText": " If the light show’s white pointer is within zone",
+    "helpText": "If a sound mixer slider is raised",
     "options": [10, 10, 10], 
     "optionText": ["mixer slide 1 raised", "mixer slide 2 raised", "mixer slide 3 raised"],
     "photo": ten,
@@ -96,7 +103,7 @@ const x = [
   },
   { 
     "name": "M11: Light Show", 
-    "helpText": "If the chicken is intact and has moved from its starting position, ",
+    "helpText": "If the light show’s white pointer is within zone",
     "options": [10, 20, 30], 
     "optionText": ["Yellow", "Green", "Blue"],
     "photo": eleven,
@@ -138,10 +145,10 @@ const x = [
   { 
     "name": "Penalties Remaining", 
     "helpText": "!!! Only Select One !!!",
-    "options": [10, 15, 25, 50], 
-    "optionText": [1, 2, 3, "4+"],
+    "options": [10, 15, 25, 35, 50], 
+    "optionText": [1, 2, 3, 4, "5+"],
     "sum": 0 
   }
   
 ]
-export default x;
+export default data;
