@@ -12,7 +12,8 @@ import twelve from './imgs/12.png';
 import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
-
+// data soure
+// https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
 const data = [
   {
     "name": "Equipment Inspection",
