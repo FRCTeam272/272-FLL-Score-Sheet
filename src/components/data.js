@@ -4,6 +4,7 @@ import three from './imgs/03.png';
 import four from './imgs/04.png';
 import five from './imgs/05.png';
 import six from './imgs/06.png';
+import seven from './imgs/07.png';
 import eight from './imgs/08.png';
 import nine from './imgs/09.png';
 import ten from './imgs/10.png';
@@ -72,7 +73,7 @@ const data = [
     "helpText": "If the treasure chest is completely outside the kraken's nest",
     "options": [20], 
     "optionText": ["Engaged"],
-    "photo": six,
+    "photo": seven,
     "sum": 0 
   },
   { 
@@ -84,34 +85,34 @@ const data = [
     "sum": 0 
   },
   { 
-    "name": "M09: Movie Set", 
-    "helpText": "",
-    "options": [10, 10], 
-    "optionText": ["If the boat is touching the mat and is completely past the black scene line", "If the camera is touching the mat and is at least partly in the camera target area"],
+    "name": "M09: Unexpected Encounter", 
+    "helpText": "If the unknown creature is released (select multiple)",
+    "options": [20, 10], 
+    "optionText": ["Engaged", "If the unknown creature is at leaset partly in the cold seep"],
     "photo": nine,
     "sum": 0 
   },
   { 
-    "name": "M10: Sound Mixer", 
-    "helpText": "If a sound mixer slider is raised",
-    "options": [10, 10, 10], 
-    "optionText": ["mixer slide 1 raised", "mixer slide 2 raised", "mixer slide 3 raised"],
+    "name": "M10: Send over the Submersible", 
+    "helpText": "",
+    "options": [30, 10], 
+    "optionText": ["If your team's yellow flag is down", "If the submersible is clearly closer to hte opposing field"],
     "photo": ten,
     "sum": 0 
   },
   { 
-    "name": "M11: Light Show", 
-    "helpText": "If the light show’s white pointer is within zone",
-    "options": [10, 20, 30], 
-    "optionText": ["Yellow", "Green", "Blue"],
+    "name": "M11: Sonar Discorvery", 
+    "helpText": "(select multiple)",
+    "options": [20, 10], 
+    "optionText": ["If one whale is reveled (1/2 rotated)", "if the other whale is relaved (as rotated as possible)"],
     "photo": eleven,
     "sum": 0 
   },
   { 
-    "name": "M12: Virtual Reality Artist", 
-    "helpText": "If the chicken is intact and has moved from its starting position",
-    "options": [10, 20], 
-    "optionText": ["Engaged", "BONUS: And is over or completely past the lavender dot"],
+    "name": "M12: Feed the Whale", 
+    "helpText": "Collect Kkrill and feed them to the whale (select multiple)",
+    "options": [10, 10, 10, 10, 10], 
+    "optionText": ["1", "2", "3", "4", "5"],
     "photo": twelve,
     "sum": 0 
   },
