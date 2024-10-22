@@ -51,34 +51,35 @@ const data = [
     "sum": 0 
   },
   { 
-    "name": "M05: Augmented Reality Statue", 
-    "helpText": "If the augmented reality statue’s orange lever is rotated completely to the right",
+    "name": "M05: Angler Fish", 
+    "helpText": "If the angler fush is latched within the shipwreck",
     "options": [30], 
     "optionText": ["Engaged"],
     "photo": five,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M06: Music Concert Lights and Sounds", 
-    "helpText": "",
-    "options": [10,10], 
-    "optionText": ["If the lights’ orange lever is rotated completely downwards", "If the speakers’ orange lever is rotated completely to the left"],
+    "name": "M06: Raise the Mast", 
+    "helpText": "Raise the mast to restore the suken shipwrek and explore what is inside",
+    "options": [30], 
+    "optionText": ["Engaged"],
     "photo": six,
     "sum": 0 
   },
   { 
-    "name": "M07: Hologram Performer", 
-    "helpText": "If the hologram performer’s orange push activator is completely past the black stage set line",
+    "name": "M07: Kraken Treasure", 
+    "helpText": "If the treasure chest is completely outside the kraken's nest",
     "options": [20], 
-    "optionText": ["Engage"],
+    "optionText": ["Engaged"],
     "photo": six,
     "sum": 0 
   },
   { 
-    "name": "M08: Rolling Camera", 
-    "helpText": "If the rolling camera’s white pointer is",
-    "options": [10, 20, 30], 
-    "optionText": ["Left of dark blue", "left of medium blue", "left of light blue"],
+    "name": "M08: Artifical Habitat", 
+    "helpText": "If an artifical habitat stack segment is completely flat and upright (select multiple)",
+    "options": [10, 10, 10, 10], 
+    "optionText": ["1", "2", "3", "4"],
     "photo": eight,
     "sum": 0 
   },
