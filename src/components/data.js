@@ -16,41 +16,37 @@ import fifteen from './imgs/15.png';
 // https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
 const data = [
   {
-    "name": "Equipment Inspection",
-    "helpText": "If your robot and all your equipment fit completely in one launch area and are under a height limit of 12 in. (305 mm) during the pre-match inspection: ",
-    "options": [20],
-    "optionText": ["Engaged"],
-    "sum": 0
-  },
-  {
-    "name": "M01: 3D Cinema",
-    "helpText": "small red beam is completely to the right of the black frame",
-    "options": [20],
-    "optionText": ["Engaged"],
+    "name": "M01: Coral Nursery",
+    "helpText": "",
+    "options": [20, 10, 20],
+    "optionText": ["the coral tree in hanging on the coral tree support", "Bonus: the bottom of the coral tree is in the holder", "Coral Buds are flipped up"],
     "photo": one,
-    "sum": 0
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M02: Theater Scene Change", 
-    "helpText": "theater’s red flag is down and the active scene color is",
-    "options": [10, 20, 30, 20, 30, 10], 
-    "optionText": ["Blue", "Pink", "Orange", "Blue CoOpertition Bonus", "Pink CoOpertition Bonus", "Orange CoOpertition Bonus"],
+    "name": "M02: Sharks", 
+    "helpText": "",
+    "options": [20, 10], 
+    "optionText": ["The shark is no longer touching the cave", "The shark is touching the mat and is at least partly in the shark habitat"],
     "photo": two,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024 
   },
   { 
-    "name": "M03: Immersive Experience", 
-    "helpText": "If the three immersive experience screens are raised",
-    "options": [20], 
-    "optionText": ["Engaged"],
+    "name": "M03: Coral Reef", 
+    "helpText": "",
+    "options": [20, 5, 5, 5], 
+    "optionText": ["the coral reef is flipped up, not touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat"],
     "photo": three,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M04: Masterpiece", 
-    "helpText": "If your team’s LEGO art piece is at least partly in the museum target area",
-    "options": [10, 20], 
-    "optionText": ["Engaged", "Bonus: Art piece is completely supported by the pedestal"],
+    "name": "M04: Scuba Diver", 
+    "helpText": "",
+    "options": [20, 20], 
+    "optionText": ["The suba diver is no longer touching the coral nursery", "The suba diver is hanging on the coral reef support"],
     "photo": four,
     "sum": 0 
   },
