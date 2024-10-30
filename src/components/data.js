@@ -117,27 +117,39 @@ const data = [
     "sum": 0 
   },
   { 
-    "name": "M13: Craft Creator", 
+    "name": "M13: Change Shipping Lanes", 
     "helpText": "",
-    "options": [10, 20], 
-    "optionText": ["If the craft machine’s orange and white lid is completely open", "If the craft machine’s light pink latch is pointing straight down"],
+    "options": [20], 
+    "optionText": ["If the shuo is in the new shipping lane, touching the mat"],
     "photo": thirteen,
     "sum": 0 
   },
   { 
-    "name": "M14: Audience Delivery", 
-    "helpText": "",
-    "options": [5,5,5,5,5,5,5,5,5,5,5,5,5,5], 
-    "optionText": ["Member 1", "Member 2", "Member 3", "Member 4", "Member 5", "Member 6", "Member 7", "Location 1", "Location 2", "Location 3", "Location 4", "Location 5", "Location 6", "Location 7"],
+    "name": "M14: Sample Collection", 
+    "helpText": "(select many)",
+    "options": [5,10, 10, 20, 10], 
+    "optionText": ["If  the water sample is compeltely outside the water sample area", "If the seabed sample is no longer touching the seabed", "If the plankton sample is no longer touching the kelp forest", "If a piece of the trident is no longer touching the shipwreck", "Bonus: If both peices are no longer touching the shipwrek"],
     "photo": fourteen,
     "sum": 0 
   },
   { 
     "name": "M15: Expert Delivery", 
-    "helpText": "If the following experts are at least partly in their target destinations",
-    "options": [10, 10, 10, 10, 10], 
+    "helpText": "If any of the following are at least partly in research vessel's cargo area",
+    "options": [
+      5,5,5,5,5,// samples
+      5,5,// trident
+      5,// treasure chest
+      20// port
+    ], 
     "optionText": [
-    "Sam the Stage Manager in Movie Set", "Anna the Curator in Museum", "Noah the Sound Engineer in Music Concert", "Izzy the Skateboarder in Skate Park", "Emily the Visual Effects Director in Cinema"],
+      "Sample 1",
+      "Sample 2",
+      "Sample 3",
+      "Trident Part 1",
+      "Trident Part 2",
+      "Treasure Chest",
+      "If the port's latch is at least partly in the research vessel's loop"
+    ],
     "photo": fifteen,
     "sum": 0 
   },
