@@ -4,7 +4,7 @@ import * as React from "react";
 import data from "./data";
 import styled from "styled-components";
 
-const storageKey = "refreshProtector";
+const storageKey = new Date().toISOString().split('T')[0];
 
 export const Container = styled.div`
   font-family: 'Open Sans', sans-serif;
@@ -90,12 +90,17 @@ export default function Head() {
 
   useEffect(() => {
     // TODO: reenable before deploy
-    if(localStorage.getItem(storageKey)){
-        setMissions(JSON.parse(localStorage.getItem(storageKey)))
-        console.log(localStorage.getItem(storageKey))
-        return
-    }
-    localStorage.setItem(storageKey, JSON.stringify(missions));
+    // Object.keys(localStorage).forEach(key => {
+    //   if (key !== storageKey) {
+    //     localStorage.removeItem(key);
+    //   }
+    // });
+    // if(localStorage.getItem(storageKey)){
+    //     setMissions(JSON.parse(localStorage.getItem(storageKey)))
+    //     console.log(localStorage.getItem(storageKey))
+    //     return
+    // }
+    // localStorage.setItem(storageKey, JSON.stringify(missions));
   }, []);
 
   useEffect(() => {

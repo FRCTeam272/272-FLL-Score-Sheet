@@ -4,6 +4,7 @@ import three from './imgs/03.png';
 import four from './imgs/04.png';
 import five from './imgs/05.png';
 import six from './imgs/06.png';
+import seven from './imgs/07.png';
 import eight from './imgs/08.png';
 import nine from './imgs/09.png';
 import ten from './imgs/10.png';
@@ -12,108 +13,106 @@ import twelve from './imgs/12.png';
 import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
-
+// data soure
+// https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
 const data = [
   {
-    "name": "Equipment Inspection",
-    "helpText": "If your robot and all your equipment fit completely in one launch area and are under a height limit of 12 in. (305 mm) during the pre-match inspection: ",
-    "options": [20],
-    "optionText": ["Engaged"],
-    "sum": 0
-  },
-  {
-    "name": "M01: 3D Cinema",
-    "helpText": "small red beam is completely to the right of the black frame",
-    "options": [20],
-    "optionText": ["Engaged"],
+    "name": "M01: Coral Nursery",
+    "helpText": "",
+    "options": [20, 10, 20],
+    "optionText": ["the coral tree in hanging on the coral tree support", "Bonus: the bottom of the coral tree is in the holder", "Coral Buds are flipped up"],
     "photo": one,
-    "sum": 0
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M02: Theater Scene Change", 
-    "helpText": "theater’s red flag is down and the active scene color is",
-    "options": [10, 20, 30, 20, 30, 10], 
-    "optionText": ["Blue", "Pink", "Orange", "Blue CoOpertition Bonus", "Pink CoOpertition Bonus", "Orange CoOpertition Bonus"],
+    "name": "M02: Sharks", 
+    "helpText": "",
+    "options": [20, 10], 
+    "optionText": ["The shark is no longer touching the cave", "The shark is touching the mat and is at least partly in the shark habitat"],
     "photo": two,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024 
   },
   { 
-    "name": "M03: Immersive Experience", 
-    "helpText": "If the three immersive experience screens are raised",
-    "options": [20], 
-    "optionText": ["Engaged"],
+    "name": "M03: Coral Reef", 
+    "helpText": "",
+    "options": [20, 5, 5, 5], 
+    "optionText": ["the coral reef is flipped up, not touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat"],
     "photo": three,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M04: Masterpiece", 
-    "helpText": "If your team’s LEGO art piece is at least partly in the museum target area",
-    "options": [10, 20], 
-    "optionText": ["Engaged", "Bonus: Art piece is completely supported by the pedestal"],
+    "name": "M04: Scuba Diver", 
+    "helpText": "",
+    "options": [20, 20], 
+    "optionText": ["The suba diver is no longer touching the coral nursery", "The suba diver is hanging on the coral reef support"],
     "photo": four,
     "sum": 0 
   },
   { 
-    "name": "M05: Augmented Reality Statue", 
-    "helpText": "If the augmented reality statue’s orange lever is rotated completely to the right",
+    "name": "M05: Angler Fish", 
+    "helpText": "If the angler fush is latched within the shipwreck",
     "options": [30], 
     "optionText": ["Engaged"],
     "photo": five,
-    "sum": 0 
+    "sum": 0,
+    "year": 2024
   },
   { 
-    "name": "M06: Music Concert Lights and Sounds", 
-    "helpText": "",
-    "options": [10,10], 
-    "optionText": ["If the lights’ orange lever is rotated completely downwards", "If the speakers’ orange lever is rotated completely to the left"],
+    "name": "M06: Raise the Mast", 
+    "helpText": "Raise the mast to restore the suken shipwrek and explore what is inside",
+    "options": [30], 
+    "optionText": ["Engaged"],
     "photo": six,
     "sum": 0 
   },
   { 
-    "name": "M07: Hologram Performer", 
-    "helpText": "If the hologram performer’s orange push activator is completely past the black stage set line",
+    "name": "M07: Kraken Treasure", 
+    "helpText": "If the treasure chest is completely outside the kraken's nest",
     "options": [20], 
-    "optionText": ["Engage"],
-    "photo": six,
+    "optionText": ["Engaged"],
+    "photo": seven,
     "sum": 0 
   },
   { 
-    "name": "M08: Rolling Camera", 
-    "helpText": "If the rolling camera’s white pointer is",
-    "options": [10, 20, 30], 
-    "optionText": ["Left of dark blue", "left of medium blue", "left of light blue"],
+    "name": "M08: Artifical Habitat", 
+    "helpText": "If an artifical habitat stack segment is completely flat and upright (select multiple)",
+    "options": [10, 10, 10, 10], 
+    "optionText": ["1", "2", "3", "4"],
     "photo": eight,
     "sum": 0 
   },
   { 
-    "name": "M09: Movie Set", 
-    "helpText": "",
-    "options": [10, 10], 
-    "optionText": ["If the boat is touching the mat and is completely past the black scene line", "If the camera is touching the mat and is at least partly in the camera target area"],
+    "name": "M09: Unexpected Encounter", 
+    "helpText": "If the unknown creature is released (select multiple)",
+    "options": [20, 10], 
+    "optionText": ["Engaged", "If the unknown creature is at leaset partly in the cold seep"],
     "photo": nine,
     "sum": 0 
   },
   { 
-    "name": "M10: Sound Mixer", 
-    "helpText": "If a sound mixer slider is raised",
-    "options": [10, 10, 10], 
-    "optionText": ["mixer slide 1 raised", "mixer slide 2 raised", "mixer slide 3 raised"],
+    "name": "M10: Send over the Submersible", 
+    "helpText": "",
+    "options": [30, 10], 
+    "optionText": ["If your team's yellow flag is down", "If the submersible is clearly closer to hte opposing field"],
     "photo": ten,
     "sum": 0 
   },
   { 
-    "name": "M11: Light Show", 
-    "helpText": "If the light show’s white pointer is within zone",
-    "options": [10, 20, 30], 
-    "optionText": ["Yellow", "Green", "Blue"],
+    "name": "M11: Sonar Discorvery", 
+    "helpText": "(select multiple)",
+    "options": [20, 10], 
+    "optionText": ["If one whale is reveled (1/2 rotated)", "if the other whale is relaved (as rotated as possible)"],
     "photo": eleven,
     "sum": 0 
   },
   { 
-    "name": "M12: Virtual Reality Artist", 
-    "helpText": "If the chicken is intact and has moved from its starting position",
-    "options": [10, 20], 
-    "optionText": ["Engaged", "BONUS: And is over or completely past the lavender dot"],
+    "name": "M12: Feed the Whale", 
+    "helpText": "Collect Kkrill and feed them to the whale (select multiple)",
+    "options": [10, 10, 10, 10, 10], 
+    "optionText": ["1", "2", "3", "4", "5"],
     "photo": twelve,
     "sum": 0 
   },
