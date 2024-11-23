@@ -17,6 +17,12 @@ import fifteen from './imgs/15.png';
 // https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
 const data = [
   {
+    "name": "M00: Inspection Bonus",
+    "helpText": "Teams earn 20 points if they can fit all their equipment into one launch area and under a 12 in (305 mm) height limit.",
+    "options": [20],
+    "optionText": ["Engaged"],
+  },
+  {
     "name": "M01: Coral Nursery",
     "helpText": "",
     "options": [20, 10, 20],
