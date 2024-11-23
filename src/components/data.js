@@ -136,7 +136,7 @@ const data = [
     "name": "M15: Expert Delivery", 
     "helpText": "If any of the following are at least partly in research vessel's cargo area",
     "options": [
-      5,5,5,5,5,// samples
+      5,5,5,// samples
       5,5,// trident
       5,// treasure chest
       20// port
