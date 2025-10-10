@@ -17,155 +17,183 @@ import fifteen from './imgs/15.png';
 // https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
 const data = [
   {
-    "name": "M00: Inspection Bonus",
-    "helpText": "Teams earn 20 points if they can fit all their equipment into one launch area and under a 12 in (305 mm) height limit.",
-    "options": [20],
-    "optionText": ["Engaged"],
+    name: `M00: Inspection Bonus`,
+    helpText: `Before the match, there will be an equipment
+inspection. If your robot and all equipment
+fit completely in one launch area and under
+a height limit of 12 in. (305 mm) during this
+inspection.`,
+    options: [20],
+    optionText: [`Engaged`],
   },
   {
-    "name": "M01: Coral Nursery",
-    "helpText": "",
-    "options": [20, 10, 20],
-    "optionText": ["the coral tree in hanging on the coral tree support", "Bonus: the bottom of the coral tree is in the holder", "Coral Buds are flipped up"],
-    "photo": one,
-    "sum": 0,
-    "year": 2024
-  },
-  { 
-    "name": "M02: Sharks", 
-    "helpText": "",
-    "options": [20, 10], 
-    "optionText": ["The shark is no longer touching the cave", "The shark is touching the mat and is at least partly in the shark habitat"],
-    "photo": two,
-    "sum": 0,
-    "year": 2024 
-  },
-  { 
-    "name": "M03: Coral Reef", 
-    "helpText": "",
-    "options": [20, 5, 5, 5], 
-    "optionText": ["the coral reef is flipped up, not touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat", "a reef segment is standing upgright, outside of home and touching the mat"],
-    "photo": three,
-    "sum": 0,
-    "year": 2024
-  },
-  { 
-    "name": "M04: Scuba Diver", 
-    "helpText": "",
-    "options": [20, 20], 
-    "optionText": ["The suba diver is no longer touching the coral nursery", "The suba diver is hanging on the coral reef support"],
-    "photo": four,
-    "sum": 0 
-  },
-  { 
-    "name": "M05: Angler Fish", 
-    "helpText": "If the angler fush is latched within the shipwreck",
-    "options": [30], 
-    "optionText": ["Engaged"],
-    "photo": five,
-    "sum": 0,
-    "year": 2024
-  },
-  { 
-    "name": "M06: Raise the Mast", 
-    "helpText": "Raise the mast to restore the suken shipwrek and explore what is inside",
-    "options": [30], 
-    "optionText": ["Engaged"],
-    "photo": six,
-    "sum": 0 
-  },
-  { 
-    "name": "M07: Kraken Treasure", 
-    "helpText": "If the treasure chest is completely outside the kraken's nest",
-    "options": [20], 
-    "optionText": ["Engaged"],
-    "photo": seven,
-    "sum": 0 
-  },
-  { 
-    "name": "M08: Artifical Habitat", 
-    "helpText": "If an artifical habitat stack segment is completely flat and upright (select multiple)",
-    "options": [10, 10, 10, 10], 
-    "optionText": ["1", "2", "3", "4"],
-    "photo": eight,
-    "sum": 0 
-  },
-  { 
-    "name": "M09: Unexpected Encounter", 
-    "helpText": "If the unknown creature is released (select multiple)",
-    "options": [20, 10], 
-    "optionText": ["Engaged", "If the unknown creature is at leaset partly in the cold seep"],
-    "photo": nine,
-    "sum": 0 
-  },
-  { 
-    "name": "M10: Send over the Submersible", 
-    "helpText": "",
-    "options": [30, 10], 
-    "optionText": ["If your team's yellow flag is down", "If the submersible is clearly closer to hte opposing field"],
-    "photo": ten,
-    "sum": 0 
-  },
-  { 
-    "name": "M11: Sonar Discorvery", 
-    "helpText": "(select multiple)",
-    "options": [20, 10], 
-    "optionText": ["If one whale is reveled (1/2 rotated)", "if the other whale is relaved (as rotated as possible)"],
-    "photo": eleven,
-    "sum": 0 
-  },
-  { 
-    "name": "M12: Feed the Whale", 
-    "helpText": "Collect Kkrill and feed them to the whale (select multiple)",
-    "options": [10, 10, 10, 10, 10], 
-    "optionText": ["1", "2", "3", "4", "5"],
-    "photo": twelve,
-    "sum": 0 
-  },
-  { 
-    "name": "M13: Change Shipping Lanes", 
-    "helpText": "",
-    "options": [20], 
-    "optionText": ["If the shuo is in the new shipping lane, touching the mat"],
-    "photo": thirteen,
-    "sum": 0 
-  },
-  { 
-    "name": "M14: Sample Collection", 
-    "helpText": "(select many)",
-    "options": [5,10, 10, 20, 10], 
-    "optionText": ["If  the water sample is compeltely outside the water sample area", "If the seabed sample is no longer touching the seabed", "If the plankton sample is no longer touching the kelp forest", "If a piece of the trident is no longer touching the shipwreck", "Bonus: If both peices are no longer touching the shipwrek"],
-    "photo": fourteen,
-    "sum": 0 
-  },
-  { 
-    "name": "M15: Expert Delivery", 
-    "helpText": "If any of the following are at least partly in research vessel's cargo area",
-    "options": [
-      5,5,5,// samples
-      5,5,// trident
-      5,// treasure chest
-      20// port
-    ], 
-    "optionText": [
-      "Sample 1",
-      "Sample 2",
-      "Sample 3",
-      "Trident Part 1",
-      "Trident Part 2",
-      "Treasure Chest",
-      "If the port's latch is at least partly in the research vessel's loop"
+    name: `M01: Surface Brushing`,
+    helpText: `select multiple`,
+    options: [10, 10, 10],
+    optionText: [
+      `A soil depot is cleared and touching the mat`, 
+      `A second soil depot is cleared and touching the mat`,
+      `Archaeologist brush is no longer touching the dig site`
     ],
-    "photo": fifteen,
-    "sum": 0 
+    photo: one,
+    sum: 0,
+    year: 2025
   },
-  { 
-    "name": "Penalties Remaining", 
-    "helpText": "!!! Only Select One !!!",
-    "options": [10, 15, 25, 35, 50], 
-    "optionText": [1, 2, 3, 4, "5+"],
-    "sum": 0 
+  {
+    // TODO: check with someone that I did this right
+    name: `M02: Map Reveal`,
+    helpText: `select multiple`,
+    options: [10, 10, 10],
+    optionText: [
+      `top soil section is cleared`, 
+      `another top soil section is cleared`,
+      `another top soil section is cleared`
+    ],
+    photo: two,
+    sum: 0,
+    year: 2025
+  },
+  {
+    name: `M03: Mineshaft Explorer`,
+    helpText: `select multiple`,
+    options: [30, 10],
+    optionText: [
+      `Your team’s minecart is on the opposing
+team’s field. `, 
+      `Bonus: and the opposing team’s minecart
+is on your team’s field.`, 
+    ],
+    photo: three,
+    sum: 0,
+    year: 2025
+  },
+  {
+    name: `M04: Careful Recovery`,
+    helpText: `select multiple`,
+    options: [30, 10],
+    optionText: [
+      `Precious artifact is not touching the mine.`, 
+      `Both support structures are standing`
+    ],
+    photo: four,
+    sum: 0
+  },
+  {
+    name: `M05: Who Lived Here?`,
+    helpText: `Structure floor is completely upright.`,
+    options: [30],
+    optionText: [`Engaged`],
+    photo: five,
+    sum: 0,
+    year: 2025
+  },
+  {
+    name: `M06: Forge`,
+    helpText: `Ore blocks are not touching the forge (select multiple)`,
+    options: [10, 10, 10],
+    optionText: [`Ore 1 clear`, `Ore 2 clear`, `Ore 3 clear`],
+    photo: six,
+    sum: 0
+  },
+  {
+    name: `M07: Heavy Lifting`,
+    helpText: `Millstone is no longer touching its base.`,
+    options: [30],
+    optionText: [`Engaged`],
+    photo: seven,
+    sum: 0
+  },
+  {
+    name: `M08: Silo`,
+    helpText: `Preserved pieces are outside the silo. (select multiple)`,
+    options: [10, 10, 10],
+    optionText: [`1`, `2`, `3`],
+    photo: eight,
+    sum: 0
+  },
+  {
+    name: `M09: Whats on Sale?`,
+    helpText: ``,
+    options: [20, 1],
+    optionText: [`Roof is completely raised.`, `Market wares are raised.`],
+    photo: nine,
+    sum: 0
+  },
+  {
+    name: `M10: Tip the Scales`,
+    helpText: ``,
+    options: [20, 10],
+    optionText: [
+      `Scale is tipped and touching the mat.`, 
+      `Scale pan is completely removed.`
+    ],
+    photo: ten,
+    sum: 0
+  },
+  {
+    name: `M11: Angler Artifacts`,
+    helpText: `(select multiple)`,
+    options: [20, 10],
+    optionText: [
+      `Artifacts are raised above the ground layer.`, 
+      `Bonus: and the crane flag is at least partly lowered.`
+    ],
+    photo: eleven,
+    sum: 0
+  },
+  {
+    name: `M12: Salvage Operation`,
+    helpText: `select multiple`,
+    options: [20, 10],
+    optionText: [`Sand is completely cleared.`, `Ship is completely raised.`],
+    photo: twelve,
+    sum: 0
+  },
+  {
+    name: `M13: Statue Rebuild`,
+    helpText: ``,
+    options: [30],
+    optionText: [`Statue is completely raised.`],
+    photo: thirteen,
+    sum: 0
+  },
+  {
+    name: `M14: Forum`,
+    helpText: `Artifacts touching the mat and at least partly in the forum: (select multiple)`,
+    options: [5, 5, 5, 5, 5, 5, 5],
+    optionText: [
+      `Brush`, 
+      `Topsoil`, 
+      `Precious Artifact`, 
+      `Opposing Team's Minecart`, 
+      `Ore with Fossilized Artifact`,
+      `Millstone`,
+      `Scale Pan`
+    ],
+    photo: fourteen,
+    sum: 0
+  },
+  {
+    name: `M15: Site Marking`,
+    helpText: `Sites with a flag at least partly inside and touching the mat.`,
+    options: [
+      10, 10, 10
+    ],
+    optionText: [
+      `One Flag Placed`,
+      `Another Flag Placed`,
+      `Third Flag Placed`
+    ],
+    photo: fifteen,
+    sum: 0
+  },
+  {
+    name: `Penalties Remaining`,
+    helpText: `!!! Only Select One !!!`,
+    options: [10, 15, 25, 35, 50,],
+    optionText: [1, 2, 3, 4, `5+`],
+    sum: 0
   }
-  
+
 ]
 export default data;
