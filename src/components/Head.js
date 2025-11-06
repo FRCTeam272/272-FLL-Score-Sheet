@@ -138,7 +138,15 @@ export default function Head() {
       <StickyDiv>
         <h2 style={{marginRight: "5px"}}>Total Sum:</h2>
         <p style={{marginRight: "5px"}}>{calculateSum()}</p>
-        <button style={{marginRight: "5px"}} onClick={() => setMissions(data)}>Clear Inputs</button>
+        <button 
+          style={{marginRight: "5px", padding: "10px", minHeight: "44px"}} 
+          onClick={(e) => {
+            window.location.reload();
+          }}
+          type="button"
+        >
+          Clear Inputs
+        </button>
       </StickyDiv>
       <br/><br/><br/>
     </Container>
