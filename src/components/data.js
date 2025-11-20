@@ -114,7 +114,7 @@ is on your team’s field.`,
   {
     name: `M09: Whats on Sale?`,
     helpText: ``,
-    options: [20, 1],
+    options: [20, 10],
     optionText: [`Roof is completely raised.`, `Market wares are raised.`],
     photo: nine,
     sum: 0
