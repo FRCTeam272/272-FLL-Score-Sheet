@@ -13,8 +13,8 @@ import twelve from './imgs/12.png';
 import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
-// data soure
-// https://firstinspires.blob.core.windows.net/fll/challenge/2024-25/interactive-rgr/0010.html
+// data source
+// https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-rgr.pdf
 const data = [
   {
     name: `M00: Inspection Bonus`,
@@ -27,168 +27,186 @@ inspection.`,
     optionText: [`Engaged`],
   },
   {
-    name: `M01: Surface Brushing`,
+    name: `M01: Drone Survey`,
     helpText: `select multiple`,
-    options: [10, 10, 10],
+    options: [20, 10],
     optionText: [
-      `A soil depot is cleared and touching the mat`, 
-      `A second soil depot is cleared and touching the mat`,
-      `Archaeologist brush is no longer touching the dig site`
+      `Drone is no longer touching the mat`,
+      `Bonus: and the LiDAR map is completely flipped over, with the scan marker at least partly in the survey area`
     ],
     photo: one,
     sum: 0,
-    year: 2025
+    year: 2026
   },
   {
-    // TODO: check with someone that I did this right
-    name: `M02: Map Reveal`,
-    helpText: `select multiple`,
+    name: `M02: Exploding Seeds`,
+    helpText: `Seeds no longer touching the stalk (select multiple)`,
     options: [10, 10, 10],
-    optionText: [
-      `top soil section is cleared`, 
-      `another top soil section is cleared`,
-      `another top soil section is cleared`
-    ],
+    optionText: [`Seed 1`, `Seed 2`, `Seed 3`],
     photo: two,
     sum: 0,
-    year: 2025
+    year: 2026
   },
   {
-    name: `M03: Mineshaft Explorer`,
+    name: `M03: Flip the Rock`,
     helpText: `select multiple`,
-    options: [30, 10],
+    options: [20, 10],
     optionText: [
-      `Your team’s minecart is on the opposing
-team’s field. `, 
-      `Bonus: and the opposing team’s minecart
-is on your team’s field.`, 
+      `The research flag is down`,
+      `Bonus: and the rock has been returned to its original starting position`
     ],
     photo: three,
     sum: 0,
-    year: 2025
+    year: 2026
   },
   {
-    name: `M04: Careful Recovery`,
-    helpText: `select multiple`,
-    options: [30, 10],
+    name: `M04: Lucky Leaves`,
+    helpText: `select multiple. If the katydid is outside the leaf habitat at the
+end of the match, even partly, this mission scores zero.`,
+    options: [10, 20],
     optionText: [
-      `Precious artifact is not touching the mine.`, 
-      `Both support structures are standing`
+      `One leaf is completely removed, no longer touching the nest`,
+      `Bonus: and the second leaf is completely removed, with the katydid in its original starting position`
     ],
     photo: four,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M05: Who Lived Here?`,
-    helpText: `Structure floor is completely upright.`,
-    options: [30],
-    optionText: [`Engaged`],
+    name: `M05: Reaching Roots`,
+    helpText: `The plant root is... !!! Only Select One !!!`,
+    options: [10, 20],
+    optionText: [`Partially extended`, `Completely extended`],
     photo: five,
     sum: 0,
-    year: 2025
+    year: 2026
   },
   {
-    name: `M06: Forge`,
-    helpText: `Ore blocks are not touching the forge (select multiple)`,
-    options: [10, 10, 10],
-    optionText: [`Ore 1 clear`, `Ore 2 clear`, `Ore 3 clear`],
+    name: `M06: Leafcutter Frenzy`,
+    helpText: `The ant is touching the nest, and the leaf fragments are contained
+within the nest (select multiple)`,
+    options: [10, 10, 10, 10],
+    optionText: [`Fragment 1`, `Fragment 2`, `Fragment 3`, `Fragment 4`],
     photo: six,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M07: Heavy Lifting`,
-    helpText: `Millstone is no longer touching its base.`,
+    name: `M07: Humongous Fungus`,
+    helpText: `select multiple. The mycelium and plant root do not need to touch to
+form a connection. Bonus is not possible in remote competitions or with no opposing team.`,
+    options: [20, 10, 10],
+    optionText: [
+      `The mycelium is completely extended`,
+      `Bonus: your team's mycelium connects with the opposing team's fully extended plant root`,
+      `Bonus: the opposing team's mycelium connects with your team's fully extended plant root`
+    ],
+    photo: seven,
+    sum: 0,
+    year: 2026
+  },
+  {
+    name: `M08: Tangled`,
+    helpText: `The vine is touching the mat.`,
     options: [30],
     optionText: [`Engaged`],
-    photo: seven,
-    sum: 0
-  },
-  {
-    name: `M08: Silo`,
-    helpText: `Preserved pieces are outside the silo. (select multiple)`,
-    options: [10, 10, 10],
-    optionText: [`1`, `2`, `3`],
     photo: eight,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M09: Whats on Sale?`,
-    helpText: ``,
-    options: [20, 10],
-    optionText: [`Roof is completely raised.`, `Market wares are raised.`],
-    photo: nine,
-    sum: 0
-  },
-  {
-    name: `M10: Tip the Scales`,
-    helpText: ``,
-    options: [20, 10],
+    name: `M09: Research Platform`,
+    helpText: `select multiple`,
+    options: [10, 10, 10],
     optionText: [
-      `Scale is tipped and touching the mat.`, 
-      `Scale pan is completely removed.`
+      `The research platform is raised`,
+      `The camera trap is deployed`,
+      `The seed is no longer touching the tree`
+    ],
+    photo: nine,
+    sum: 0,
+    year: 2026
+  },
+  {
+    name: `M10: Fragile Microhabitats`,
+    helpText: `select multiple`,
+    options: [10, 10],
+    optionText: [
+      `The spider habitat is in its original starting position`,
+      `The snail habitat is in its original starting position`
     ],
     photo: ten,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M11: Angler Artifacts`,
-    helpText: `(select multiple)`,
-    options: [20, 10],
-    optionText: [
-      `Artifacts are raised above the ground layer.`, 
-      `Bonus: and the crane flag is at least partly lowered.`
-    ],
+    name: `M11: Window to the Past`,
+    helpText: `The root cover is down, touching the mat.`,
+    options: [20],
+    optionText: [`Engaged`],
     photo: eleven,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M12: Salvage Operation`,
+    name: `M12: Forest Elder`,
     helpText: `select multiple`,
     options: [20, 10],
-    optionText: [`Sand is completely cleared.`, `Ship is completely raised.`],
-    photo: twelve,
-    sum: 0
-  },
-  {
-    name: `M13: Statue Rebuild`,
-    helpText: ``,
-    options: [30],
-    optionText: [`Statue is completely raised.`],
-    photo: thirteen,
-    sum: 0
-  },
-  {
-    name: `M14: Forum`,
-    helpText: `Artifacts touching the mat and at least partly in the forum: (select multiple)`,
-    options: [5, 5, 5, 5, 5, 5, 5],
     optionText: [
-      `Brush`, 
-      `Topsoil`, 
-      `Precious Artifact`, 
-      `Opposing Team's Minecart`, 
-      `Ore with Fossilized Artifact`,
-      `Millstone`,
-      `Scale Pan`
+      `The cane is completely raised, touching the tree`,
+      `The support tie is around the post`
+    ],
+    photo: twelve,
+    sum: 0,
+    year: 2026
+  },
+  {
+    name: `M13: Keystone Species`,
+    helpText: `Your team's keystone species is on the restoration platform,
+and the young trees are raised.`,
+    options: [30],
+    optionText: [`Engaged`],
+    photo: thirteen,
+    sum: 0,
+    year: 2026
+  },
+  {
+    name: `M14: Seeds of Renewal`,
+    helpText: `Seeds are contained within the replantation station (5 each),
+bonus if they are also touching the mat (5 added each). (select multiple)`,
+    options: [5, 5, 5, 5, 5, 5, 5, 5],
+    optionText: [
+      `Seed 1 in station`,
+      `Seed 2 in station`,
+      `Seed 3 in station`,
+      `Seed 4 in station`,
+      `Bonus: seed 1 touching mat`,
+      `Bonus: seed 2 touching mat`,
+      `Bonus: seed 3 touching mat`,
+      `Bonus: seed 4 touching mat`
     ],
     photo: fourteen,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `M15: Site Marking`,
-    helpText: `Sites with a flag at least partly inside and touching the mat.`,
-    options: [
-      10, 10, 10
-    ],
+    name: `M15: Biocentric Architecture`,
+    helpText: `select multiple. Environmental bonus: completed the greatest ecological
+need for the dock the model is located (Mine dock: nesting canopy, City dock:
+garden skylight, Farm dock: compost hatch). Only one bonus is possible.`,
+    options: [10, 10, 10, 10],
     optionText: [
-      `One Flag Placed`,
-      `Another Flag Placed`,
-      `Third Flag Placed`
+      `The nesting canopy is raised`,
+      `The garden skylight is completely in`,
+      `The compost hatch is completely opened, touching the mat`,
+      `Environmental Bonus`
     ],
     photo: fifteen,
-    sum: 0
+    sum: 0,
+    year: 2026
   },
   {
-    name: `Penalties Remaining`,
+    name: `Precision Tokens Remaining`,
     helpText: `!!! Only Select One !!!`,
     options: [10, 15, 25, 35, 50,],
     optionText: [1, 2, 3, 4, `5+`],
