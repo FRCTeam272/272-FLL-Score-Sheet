@@ -13,6 +13,13 @@ import twelve from './imgs/12.png';
 import thirteen from './imgs/13.png';
 import fourteen from './imgs/14.png';
 import fifteen from './imgs/15.png';
+// Each mission:
+//   name       - title shown on the card
+//   helpText   - optional extra instructions
+//   options    - points for each choice
+//   optionText - label for each choice (same order as options)
+//   exclusive  - optional, true when only one choice can be picked
+//   photo      - optional, image imported above (only loaded when opened)
 // data source
 // https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-rgr.pdf
 const data = [
@@ -28,7 +35,7 @@ inspection.`,
   },
   {
     name: `M01: Drone Survey`,
-    helpText: `select multiple`,
+    helpText: ``,
     options: [20, 10],
     optionText: [
       `Drone is no longer touching the mat`,
@@ -40,7 +47,7 @@ inspection.`,
   },
   {
     name: `M02: Exploding Seeds`,
-    helpText: `Seeds no longer touching the stalk (select multiple)`,
+    helpText: `Seeds no longer touching the stalk`,
     options: [10, 10, 10],
     optionText: [`Seed 1`, `Seed 2`, `Seed 3`],
     photo: two,
@@ -49,7 +56,7 @@ inspection.`,
   },
   {
     name: `M03: Flip the Rock`,
-    helpText: `select multiple`,
+    helpText: ``,
     options: [20, 10],
     optionText: [
       `The research flag is down`,
@@ -61,7 +68,7 @@ inspection.`,
   },
   {
     name: `M04: Lucky Leaves`,
-    helpText: `select multiple. If the katydid is outside the leaf habitat at the
+    helpText: `If the katydid is outside the leaf habitat at the
 end of the match, even partly, this mission scores zero.`,
     options: [10, 20],
     optionText: [
@@ -74,7 +81,8 @@ end of the match, even partly, this mission scores zero.`,
   },
   {
     name: `M05: Reaching Roots`,
-    helpText: `The plant root is... !!! Only Select One !!!`,
+    helpText: `The plant root is...`,
+    exclusive: true,
     options: [10, 20],
     optionText: [`Partially extended`, `Completely extended`],
     photo: five,
@@ -84,7 +92,7 @@ end of the match, even partly, this mission scores zero.`,
   {
     name: `M06: Leafcutter Frenzy`,
     helpText: `The ant is touching the nest, and the leaf fragments are contained
-within the nest (select multiple)`,
+within the nest`,
     options: [10, 10, 10, 10],
     optionText: [`Fragment 1`, `Fragment 2`, `Fragment 3`, `Fragment 4`],
     photo: six,
@@ -93,7 +101,7 @@ within the nest (select multiple)`,
   },
   {
     name: `M07: Humongous Fungus`,
-    helpText: `select multiple. The mycelium and plant root do not need to touch to
+    helpText: `The mycelium and plant root do not need to touch to
 form a connection. Bonus is not possible in remote competitions or with no opposing team.`,
     options: [20, 10, 10],
     optionText: [
@@ -116,7 +124,7 @@ form a connection. Bonus is not possible in remote competitions or with no oppos
   },
   {
     name: `M09: Research Platform`,
-    helpText: `select multiple`,
+    helpText: ``,
     options: [10, 10, 10],
     optionText: [
       `The research platform is raised`,
@@ -129,7 +137,7 @@ form a connection. Bonus is not possible in remote competitions or with no oppos
   },
   {
     name: `M10: Fragile Microhabitats`,
-    helpText: `select multiple`,
+    helpText: ``,
     options: [10, 10],
     optionText: [
       `The spider habitat is in its original starting position`,
@@ -150,7 +158,7 @@ form a connection. Bonus is not possible in remote competitions or with no oppos
   },
   {
     name: `M12: Forest Elder`,
-    helpText: `select multiple`,
+    helpText: ``,
     options: [20, 10],
     optionText: [
       `The cane is completely raised, touching the tree`,
@@ -173,7 +181,7 @@ and the young trees are raised.`,
   {
     name: `M14: Seeds of Renewal`,
     helpText: `Seeds are contained within the replantation station (5 each),
-bonus if they are also touching the mat (5 added each). (select multiple)`,
+bonus if they are also touching the mat (5 added each).`,
     options: [5, 5, 5, 5, 5, 5, 5, 5],
     optionText: [
       `Seed 1 in station`,
@@ -191,7 +199,7 @@ bonus if they are also touching the mat (5 added each). (select multiple)`,
   },
   {
     name: `M15: Biocentric Architecture`,
-    helpText: `select multiple. Environmental bonus: completed the greatest ecological
+    helpText: `Environmental bonus: completed the greatest ecological
 need for the dock the model is located (Mine dock: nesting canopy, City dock:
 garden skylight, Farm dock: compost hatch). Only one bonus is possible.`,
     options: [10, 10, 10, 10],
@@ -207,7 +215,8 @@ garden skylight, Farm dock: compost hatch). Only one bonus is possible.`,
   },
   {
     name: `Precision Tokens Remaining`,
-    helpText: `!!! Only Select One !!!`,
+    helpText: ``,
+    exclusive: true,
     options: [10, 15, 25, 35, 50,],
     optionText: [1, 2, 3, 4, `5+`],
     sum: 0
